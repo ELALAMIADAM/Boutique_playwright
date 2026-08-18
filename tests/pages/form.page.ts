@@ -1,5 +1,5 @@
 import { Page } from "@playwright/test";
-import { DashBoard } from "./Dashboard.page";
+import { DashBoard } from "./dashboard.page";
 
 export class Form extends DashBoard {
     constructor(page:Page){
