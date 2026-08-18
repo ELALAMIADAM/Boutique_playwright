@@ -20,9 +20,9 @@ export class Form extends DashBoard {
         await this.elements_4.description_product().fill(desc)
         await this.elements_4.product_prix().fill(price)
         await this.elements_4.product_stock().fill(stock)
-
-        await this.elements_4.add_new().click()
         await this.elements_4.product_img().setInputFiles(img)
+        await this.elements_4.add_new().click()
+        
     }
 
 }
