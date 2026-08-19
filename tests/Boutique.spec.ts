@@ -10,7 +10,7 @@ test.beforeEach("login",async({page}) =>{
     await expect(page).toHaveURL(/client/);
 })
 
-test('Bonjour Farid', async ({ page }) => {
+test('Bonjour Farid', { tag: '@Farid' }, async ({ page }) => {
   
 
   // Expect a title "to contain" a substring.

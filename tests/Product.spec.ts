@@ -12,7 +12,7 @@ test.beforeEach("login",async({page}) =>{
     await expect(page).toHaveURL(/admin/);
 })
 
-test('New product', async ({ page }) => {
+test('New product', { tag: '@Product_new' }, async ({ page }) => {
   
     await pr.addNewProduct()
     await expect(page).toHaveURL(/product_form/);
