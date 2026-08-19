@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Lancement de test') {
             steps{
-                sh 'npx playwright test --project="firefox"'
+                sh 'npx playwright test'
             }
         }
     }
