@@ -5,7 +5,7 @@ pipeline{
         booleanParam(name: 'istags', defaultValue: false, description: 'executer avec ou sans tags')
         choice(name: 'Tags', choices: ['@Farid', '@Product_new'], description: 'Choisissez le choix de tag')
         booleanParam(name: 'isbrowser', defaultValue: false, description: 'executer avec ou sans browser')
-        choice(name: 'browser', choices: ['firefox','chromium','edge'], description: 'Choisissez le choix du navigateur')   
+        choice(name: 'browser', choices: ['firefox','chromium'], description: 'Choisissez le choix du navigateur')   
     }
     stages{
         stage('global stage'){
